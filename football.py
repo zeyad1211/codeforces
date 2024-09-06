@@ -7,7 +7,7 @@ for i in range(n):
     diction[inpt] +=1
 
 val = max(diction.values())
-for key,value in diction:
+for key, value in diction.items():
     if value == val:
         print(key)
         break
