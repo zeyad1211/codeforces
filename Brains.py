@@ -10,4 +10,4 @@ for arr in lst:
 if (color == 1):
     print("#Color")
 else:
-    print("Black&White")
+    print("#Black&White")
