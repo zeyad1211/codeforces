@@ -6,11 +6,11 @@ def isX():
         lst[i] = input()
     temp = 0
     temp2 = n-1
-    for j in range(0, round(n/2)):
+    for j in range(0, n):
         for k in range(0, round((n/2))):
             if (lst[j][k] == lst[j][-k-1] and lst[j][k] == lst[-j-1][k]):
                 string = "YES"
-                if j == k:
+                if j == k or j+k == n-1:
                     if lst[j][k] != lst[0][0]:
                         string = "NO"
                         print(1)
