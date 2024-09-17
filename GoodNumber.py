@@ -1,4 +1,5 @@
 n, k = map(int,input().split())
+tot = 0
 dictionary = {}
 for u in range(k+1):
     dictionary[str(u)] = 0
@@ -9,5 +10,10 @@ for i in range(n):
         if str(j) in num:
             dictionary[str(j)] += 1
     # print(dictionary)
-tot = min(dictionary.values())
+    if 0 in dictionary.values():
+        tot += 0
+    else:
+        tot += 1
+    for u in range(k+1):
+        dictionary[str(u)] = 0
 print(tot)
