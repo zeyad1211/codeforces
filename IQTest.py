@@ -1,4 +1,3 @@
-
 def run():
     lst = [""]*4
     start1 = 0
@@ -9,7 +8,7 @@ def run():
     stop2 = 2
     for p in range(4):
         lst[p] = input()
-    print(lst)
+    # print(lst)
     while(stop1 < 5):
         for row in range(start1, stop1):
             for col in range(start2, stop2):
