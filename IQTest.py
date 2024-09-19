@@ -16,7 +16,7 @@ def run():
                     hashcount += 1
                 else:
                     dotcount += 1
-        if hashcount == 3 or dotcount == 3:
+        if hashcount >= 3 or dotcount >= 3:
             return "YES"
         start2 += 1
         stop2 += 1
