@@ -1,8 +1,12 @@
 
 def run():
     lst = [""]*4
-    start1, start2, hashcount, dotcount = 0
-    stop1, stop2 = 2
+    start1 = 0
+    start2 = 0
+    hashcount = 0
+    dotcount = 0
+    stop1 = 2
+    stop2 = 2
     for p in range(4):
         lst[p] = input()
     print(lst)
@@ -15,11 +19,13 @@ def run():
                     dotcount += 1
         if hashcount == 3 or dotcount == 3:
             return "YES"
-        start2, stop2 += 1
+        start2 += 1
+        stop2 += 1
         if stop2 == 4:
             start2 = 0
             stop2 = 2
-            start1, stop1 += 1
+            start1 += 1
+            stop1 += 1
     return "NO"
 ans = run()
 print(ans)
